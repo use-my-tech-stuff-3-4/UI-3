@@ -1,0 +1,257 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.container-home {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.container-home .app-images {
+  position: absolute;
+  width: 504px;
+  height: 490.11px;
+  left: 142px;
+  top: 205px;
+}
+.container-home .app-images .front-img {
+  position: absolute;
+  width: 281px;
+  height: 532px;
+  left: 141px;
+  top: 20px;
+  overflow-y: scroll;
+}
+.container-home .text h1 {
+  position: absolute;
+  width: 553px;
+  height: 152px;
+  left: 732px;
+  top: 195px;
+  font-family: SF Pro Text;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 76px;
+  color: #242424;
+}
+.container-home .text .mobile-headline {
+  display: none;
+}
+.container-home .text h2 {
+  position: absolute;
+  width: 376px;
+  height: 86px;
+  left: 732px;
+  top: 358px;
+  font-family: SF Pro Text;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 43px;
+  color: #000000;
+}
+.container-home .text h3 {
+  position: absolute;
+  width: 227px;
+  height: 29px;
+  left: 732px;
+  top: 490px;
+}
+.container-home .text p {
+  position: absolute;
+  width: 508px;
+  height: 105px;
+  left: 732px;
+  top: 533px;
+  font-family: SF Pro Text;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+.container-home .text button {
+  position: absolute;
+  width: 212px;
+  height: 56px;
+  left: 732px;
+  top: 682px;
+  color: white;
+  background: #ED553B;
+  border-radius: 6px;
+}
+.container-home .app-images {
+  width: 50%;
+}
+.top-nav {
+  display: flex;
+  justify-content: flex-end;
+  margin: 2%;
+}
+.top-nav .sign-up {
+  width: 13%;
+  height: 50px;
+  font-size: 1.2rem;
+  color: white;
+  background: rgba(4, 58, 103, 0.8);
+  border-radius: 6px;
+  margin-right: 1.5%;
+}
+.top-nav .sign-in {
+  width: 13%;
+  height: 50px;
+  font-size: 1.2rem;
+  background: #FFFFFF;
+  border: 3px solid #315C81;
+  box-sizing: border-box;
+  border-radius: 6px;
+}
+footer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  margin: 2%;
+}
+footer a {
+  justify-content: flex-start;
+  color: black;
+  text-decoration: none;
+}
+footer p {
+  justify-content: center;
+  font-family: SF Pro Text;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000000;
+}
+footer .img-links {
+  justify-content: flex-end;
+}
