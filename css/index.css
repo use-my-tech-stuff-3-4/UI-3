@@ -130,87 +130,183 @@ table {
   display: flex;
   flex-flow: row nowrap;
 }
+@media only screen and (max-width: 500px) {
+  .container-home {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 100%;
+  }
+}
 .container-home .app-images {
   position: absolute;
-  width: 504px;
-  height: 490.11px;
-  left: 142px;
-  top: 205px;
+  height: 60%;
+  left: 18%;
+  top: 22%;
+}
+@media only screen and (max-width: 1200px) {
+  .container-home .app-images {
+    left: 0%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .container-home .app-images {
+    display: none;
+  }
 }
 .container-home .app-images .front-img {
   position: absolute;
-  width: 281px;
-  height: 532px;
-  left: 141px;
-  top: 20px;
+  left: 16%;
+  top: 3.5%;
   overflow-y: scroll;
 }
-.container-home .text h1 {
+.container-home .text {
+  display: flex;
+  flex-flow: column;
   position: absolute;
-  width: 553px;
-  height: 152px;
-  left: 732px;
-  top: 195px;
+  width: 30%;
+  height: 70%;
+  left: 55%;
+  top: 22%;
+}
+@media only screen and (max-width: 500px) {
+  .container-home .text {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 4%;
+    margin: 4%;
+    width: 93%;
+  }
+}
+.container-home .text h1 {
+  padding-bottom: 3%;
   font-family: SF Pro Text;
   font-style: normal;
   font-weight: 800;
-  font-size: 64px;
-  line-height: 76px;
+  font-size: 4rem;
   color: #242424;
 }
-.container-home .text .mobile-headline {
+@media only screen and (max-width: 500px) {
+  .container-home .text h1 {
+    font-size: 2.5rem;
+    width: 65%;
+  }
+}
+.container-home .text .mobile-headline h1 {
   display: none;
 }
+@media only screen and (max-width: 500px) {
+  .container-home .text .mobile-headline h1 {
+    display: flex;
+    justify-content: space-around;
+    width: 95%;
+    font-size: 3rem;
+    padding: 15% 3% 15% 3%;
+  }
+}
 .container-home .text h2 {
-  position: absolute;
-  width: 376px;
-  height: 86px;
-  left: 732px;
-  top: 358px;
+  padding-bottom: 7%;
+  width: 60%;
   font-family: SF Pro Text;
   font-style: normal;
   font-weight: normal;
-  font-size: 36px;
-  line-height: 43px;
+  font-size: 2.5rem;
   color: #000000;
+}
+@media only screen and (max-width: 500px) {
+  .container-home .text h2 {
+    font-size: 1.7rem;
+    width: 100%;
+    padding-bottom: 15%;
+  }
 }
 .container-home .text h3 {
-  position: absolute;
-  width: 227px;
-  height: 29px;
-  left: 732px;
-  top: 490px;
+  padding-bottom: 4%;
+  font-size: 1.5rem;
+}
+@media only screen and (max-width: 500px) {
+  .container-home .text h3 {
+    font-size: 2rem;
+  }
 }
 .container-home .text p {
-  position: absolute;
-  width: 508px;
-  height: 105px;
-  left: 732px;
-  top: 533px;
+  padding-bottom: 4%;
   font-family: SF Pro Text;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 1.2rem;
+  line-height: 225%;
   color: #000000;
 }
+@media only screen and (max-width: 500px) {
+  .container-home .text p {
+    width: 77%;
+  }
+}
 .container-home .text button {
-  position: absolute;
-  width: 212px;
-  height: 56px;
-  left: 732px;
-  top: 682px;
+  width: 40%;
+  height: 50px;
   color: white;
   background: #ED553B;
   border-radius: 6px;
 }
+@media only screen and (max-width: 500px) {
+  .container-home .text button {
+    display: none;
+  }
+}
+.container-home .bottom-buttons {
+  display: none;
+  padding-bottom: 4%;
+}
+@media only screen and (max-width: 500px) {
+  .container-home .bottom-buttons {
+    display: flex;
+    Justify-content: space-around;
+    align-content: space-around;
+    flex-flow: column;
+    position: absolute;
+    top: 85%;
+    left: 0;
+    right: 0;
+    margin: 4%;
+  }
+  .container-home .bottom-buttons button {
+    margin: 4% 0;
+  }
+  .container-home .bottom-buttons .bottom-sign-up {
+    height: 50px;
+    font-size: 1.2rem;
+    color: white;
+    background: rgba(237, 85, 59, 0.8);
+    border-radius: 10px;
+  }
+  .container-home .bottom-buttons .bottom-sign-in {
+    height: 50px;
+    font-size: 1.2rem;
+    background: #FFFFFF;
+    border: 3px solid rgba(237, 85, 59, 0.8);
+    box-sizing: border-box;
+    border-radius: 10px;
+  }
+}
 .container-home .app-images {
-  width: 50%;
+  width: 55%;
 }
 .top-nav {
   display: flex;
   justify-content: flex-end;
   margin: 2%;
+}
+@media only screen and (max-width: 500px) {
+  .top-nav {
+    display: none;
+  }
 }
 .top-nav .sign-up {
   width: 13%;
@@ -233,18 +329,21 @@ table {
 footer {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: flex-end;
-  width: 100%;
+  justify-content: space-around;
+  width: 95%;
   margin: 2%;
 }
+@media only screen and (max-width: 500px) {
+  footer {
+    display: none;
+  }
+}
 footer a {
-  justify-content: flex-start;
   color: black;
   text-decoration: none;
 }
 footer p {
-  justify-content: center;
+  display: flex;
   font-family: SF Pro Text;
   font-style: normal;
   font-weight: normal;
@@ -253,5 +352,5 @@ footer p {
   color: #000000;
 }
 footer .img-links {
-  justify-content: flex-end;
+  display: flex;
 }

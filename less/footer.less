@@ -1,27 +1,23 @@
 footer {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: flex-end;
-    width: 100%;
+    justify-content: space-around;
+    // align-content: flex-end;
+    width: 95%;
     margin: 2%;
-    // position: absolute;
-    // width: 1440px;
-    // height: 81px;
-    // left: 24px;
-    // top: 819px;
+    // padding: 10%;
+    @media @mobile {
+        display: none;
+    }
+
     a {
-        justify-content: flex-start;
+        // justify-content: flex-start;
         color: black;
         text-decoration: none;
     }
     p {
-        // position: absolute;
-        // width: 193px;
-        // height: 14px;
-        // left: 623px;
-        // top: 855px;
-        justify-content: center;
+        display: flex;
+        // justify-content: center;
         font-family: SF Pro Text;
         font-style: normal;
         font-weight: normal;
@@ -31,9 +27,8 @@ footer {
         color: #000000;
     }
     .img-links {
-        // position: absolute;
-        // top: 90%;
-        justify-content: flex-end;
+        display: flex;
+        // justify-content: center;
         // .insta {
         //     position: absolute;
         //     width: 20px;
