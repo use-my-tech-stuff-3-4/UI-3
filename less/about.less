@@ -1,0 +1,129 @@
+.container-home {
+    display: flex;
+    justify-content: center;
+    flex-flow: row nowrap;
+    width: 100%;
+    @media @ipad {
+        display: flex;
+        justify-content: center;
+        width: 91%;
+    }
+    @media @mobile {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        width: 93%;
+    }
+
+
+    
+    .content {
+        display: flex;
+        flex-flow: column nowrap;
+
+        .headline h1 {
+            margin: 0 4% 4% 4%;
+            padding: 0;
+            border: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding-bottom: 3%;
+            // width: 225%;
+            // border: 1px solid red; // Test
+
+            font-family: SF Pro Text;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 4rem;
+            // line-height: 76px;
+
+            color: #242424;
+            @media @mobile {
+                padding-top: 4%;
+                font-size: 2.5rem;
+                width: 100%;
+            }
+        }
+
+        .bio p {
+            display: flex;
+            justify-content: center;
+            margin: 4%;
+            width: 100%;
+            font-size: 1rem;
+            // border: 1px solid red; // Test
+            @media @mobile {
+                font-size: 1.5rem;
+                width: 100%;
+                margin: 0 4% 0 4%;
+            }
+        }
+
+        .team {
+            display: flex;
+            flex-flow: column nowrap;
+            // justify-content: center;
+            margin: 4%;
+            width: 228%;
+            // border: 1px solid red; // Test
+            @media @mobile {
+                justify-content: center;
+                width: 100%;
+            }
+            img {
+                // display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 50%;
+                height: auto;                
+                .border-radius(10px);
+                // margin: 4%;
+                // border: 1px solid red; // Test
+                @media @mobile {
+                    width: 90%;
+                    height: auto;
+                }
+            }
+            h3 {
+                justify-content: center;
+                margin: 0 4% 4% 4%;
+                font-size: 1.5rem;
+                // border: 1px solid red; // Test
+            }
+        }
+    }
+
+}
+
+// .home {
+//     display: none;
+//     padding-bottom: 4%;
+//     @media @mobile {
+//         button {
+//             margin: 4% 0;
+//         }
+//         display: flex;
+//         Justify-content: flex-end;
+//         align-content: flex-end;
+//         flex-flow: column nowrap;
+//         // position: absolute;
+//         // top: 85%;
+//         // width: 90%;
+//         left: 0;
+//         right: 0;
+//         margin: 4%;
+//         // margin: 2%;
+//         // padding: 10% 0 10% 0;
+//         .home-bottom {
+//             // width: 13%;
+//             height: 50px;
+//             font-size: 1.2rem;
+//             color: white;
+//             background: rgba(237, 85, 59, 0.8);
+//             border-radius: 10px;
+//         }
+//     }
+// }

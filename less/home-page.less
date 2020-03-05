@@ -1,0 +1,200 @@
+.container-home {
+    display: flex;
+    // justify-content: space-around;
+    flex-flow: row nowrap;
+    @media @mobile {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        width: 100%;
+    }
+
+    .app-images {
+        // justify-content: flex-end;
+        position: relative;
+        // height: 60%;
+        left: 18%;
+        top: 22%;
+        @media @ipad {
+            left: 0%
+        }
+        @media @mobile {
+            display: none;
+        }
+        .front-img {
+            position: absolute;
+            // width: 290px;
+            // height: 100%;
+            left: 16%;
+            top: 3.5%;
+            overflow-y: scroll;
+
+            // background: #FFFFFF;           
+        }
+    }
+
+    
+    
+
+    .text {
+        display: flex;
+        flex-flow: column;
+        // position: absolute;
+        width: 30%;
+        height: 70%;
+        left: 55%;
+        top: 22%;
+        @media @mobile {
+            display: flex;
+            justify-content: center;
+            position: relative;       
+            left: 0;
+            right: 0;
+            top: 4%;
+            margin: 4%;
+            width: 93%;
+        }
+
+        h1 {
+            padding-bottom: 3%;
+            // top: 22%;
+
+            font-family: SF Pro Text;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 4rem;
+            // line-height: 76px;
+
+            color: #242424;
+            @media @mobile {
+                font-size: 2.5rem;
+                width: 65%;
+            }
+        }
+        .mobile-headline h1 {
+            display: none;            
+            @media @mobile {
+                display: flex;
+                justify-content: space-around;
+                width: 95%;
+                font-size: 3rem;
+                padding: 15% 3% 15% 3%;
+            }
+        }
+        
+        h2 {
+            padding-bottom: 7%;
+            // position: absolute;
+            width: 60%;
+            // height: 86px;
+            // left: 55%;
+            // top: 358px;
+
+            font-family: SF Pro Text;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 2.5rem;
+            // line-height: 43px;
+
+            color: #000000;
+            @media @mobile {
+                font-size: 1.7rem;
+                width: 100%;
+                padding-bottom: 15%;
+            }
+        }
+        h3 {
+            padding-bottom: 4%;
+            font-size: 1.5rem;
+            // position: absolute;
+            // width: 227px;
+            // height: 29px;
+            // left: 55%;
+            // top: 490px;
+            @media @mobile {
+                font-size: 2rem;
+            }
+        }
+        p {
+            // position: absolute;
+            // width: 508px;
+            // height: 105px;
+            // left: 55%;
+            // top: 533px;
+            padding-bottom: 4%;
+
+            font-family: SF Pro Text;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 1.2rem;
+            line-height: 225%;
+
+            color: #000000;
+            @media @mobile {
+                width: 77%;
+            }
+        }
+        button {
+            // position: absolute;
+            width: 40%;
+            height: 50px;
+            // left: 55%;
+            // top: 682px;
+
+            color: white;
+            background: #ED553B;
+            .border-radius(6px);
+            @media @mobile {
+                display: none;
+            }
+        }
+            
+        
+    }
+    .bottom-buttons {
+        display: none;
+        padding-bottom: 4%;
+        @media @mobile {
+            button {
+                margin: 4% 0;
+            }
+            display: flex;
+            Justify-content: space-around;
+            align-content: space-around;
+            flex-flow: column;
+            position: absolute;
+            top: 85%;
+            // width: 90%;
+            left: 0;
+            right: 0;
+            margin: 4%;
+            // margin: 2%;
+            // padding: 10% 0 10% 0;
+            .bottom-sign-up {
+                // width: 13%;
+                height: 50px;
+                font-size: 1.2rem;
+                color: white;
+                background: rgba(237, 85, 59, 0.8);
+                .border-radius(10px);
+            }
+        
+            .bottom-sign-in {
+                // width: 13%;
+                height: 50px;
+                font-size: 1.2rem;
+        
+                background: #FFFFFF;
+                border: 3px solid rgba(237, 85, 59, 0.8);                
+                box-sizing: border-box;
+                .border-radius(10px);
+            }
+        }
+    }
+
+    .app-images {
+        width: 55%;
+    }
+} // container-home

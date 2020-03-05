@@ -1,0 +1,439 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.container-home {
+  display: flex;
+  flex-flow: row nowrap;
+}
+@media only screen and (max-width: 500px) {
+  .container-home {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 100%;
+  }
+}
+.container-home .app-images {
+  position: relative;
+  left: 18%;
+  top: 22%;
+}
+@media only screen and (max-width: 1200px) {
+  .container-home .app-images {
+    left: 0%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .container-home .app-images {
+    display: none;
+  }
+}
+.container-home .app-images .front-img {
+  position: absolute;
+  left: 16%;
+  top: 3.5%;
+  overflow-y: scroll;
+}
+.container-home .text {
+  display: flex;
+  flex-flow: column;
+  width: 30%;
+  height: 70%;
+  left: 55%;
+  top: 22%;
+}
+@media only screen and (max-width: 500px) {
+  .container-home .text {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 4%;
+    margin: 4%;
+    width: 93%;
+  }
+}
+.container-home .text h1 {
+  padding-bottom: 3%;
+  font-family: SF Pro Text;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 4rem;
+  color: #242424;
+}
+@media only screen and (max-width: 500px) {
+  .container-home .text h1 {
+    font-size: 2.5rem;
+    width: 65%;
+  }
+}
+.container-home .text .mobile-headline h1 {
+  display: none;
+}
+@media only screen and (max-width: 500px) {
+  .container-home .text .mobile-headline h1 {
+    display: flex;
+    justify-content: space-around;
+    width: 95%;
+    font-size: 3rem;
+    padding: 15% 3% 15% 3%;
+  }
+}
+.container-home .text h2 {
+  padding-bottom: 7%;
+  width: 60%;
+  font-family: SF Pro Text;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.5rem;
+  color: #000000;
+}
+@media only screen and (max-width: 500px) {
+  .container-home .text h2 {
+    font-size: 1.7rem;
+    width: 100%;
+    padding-bottom: 15%;
+  }
+}
+.container-home .text h3 {
+  padding-bottom: 4%;
+  font-size: 1.5rem;
+}
+@media only screen and (max-width: 500px) {
+  .container-home .text h3 {
+    font-size: 2rem;
+  }
+}
+.container-home .text p {
+  padding-bottom: 4%;
+  font-family: SF Pro Text;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.2rem;
+  line-height: 225%;
+  color: #000000;
+}
+@media only screen and (max-width: 500px) {
+  .container-home .text p {
+    width: 77%;
+  }
+}
+.container-home .text button {
+  width: 40%;
+  height: 50px;
+  color: white;
+  background: #ED553B;
+  border-radius: 6px;
+}
+@media only screen and (max-width: 500px) {
+  .container-home .text button {
+    display: none;
+  }
+}
+.container-home .bottom-buttons {
+  display: none;
+  padding-bottom: 4%;
+}
+@media only screen and (max-width: 500px) {
+  .container-home .bottom-buttons {
+    display: flex;
+    Justify-content: space-around;
+    align-content: space-around;
+    flex-flow: column;
+    position: absolute;
+    top: 85%;
+    left: 0;
+    right: 0;
+    margin: 4%;
+  }
+  .container-home .bottom-buttons button {
+    margin: 4% 0;
+  }
+  .container-home .bottom-buttons .bottom-sign-up {
+    height: 50px;
+    font-size: 1.2rem;
+    color: white;
+    background: rgba(237, 85, 59, 0.8);
+    border-radius: 10px;
+  }
+  .container-home .bottom-buttons .bottom-sign-in {
+    height: 50px;
+    font-size: 1.2rem;
+    background: #FFFFFF;
+    border: 3px solid rgba(237, 85, 59, 0.8);
+    box-sizing: border-box;
+    border-radius: 10px;
+  }
+}
+.container-home .app-images {
+  width: 55%;
+}
+.container-home {
+  display: flex;
+  justify-content: center;
+  flex-flow: row nowrap;
+  width: 100%;
+}
+@media only screen and (max-width: 1200px) {
+  .container-home {
+    display: flex;
+    justify-content: center;
+    width: 91%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .container-home {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 93%;
+  }
+}
+.container-home .content {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.container-home .content .headline h1 {
+  margin: 0 4% 4% 4%;
+  padding: 0;
+  border: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 3%;
+  font-family: SF Pro Text;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 4rem;
+  color: #242424;
+}
+@media only screen and (max-width: 500px) {
+  .container-home .content .headline h1 {
+    padding-top: 4%;
+    font-size: 2.5rem;
+    width: 100%;
+  }
+}
+.container-home .content .bio p {
+  display: flex;
+  justify-content: center;
+  margin: 4%;
+  width: 100%;
+  font-size: 1rem;
+}
+@media only screen and (max-width: 500px) {
+  .container-home .content .bio p {
+    font-size: 1.5rem;
+    width: 100%;
+    margin: 0 4% 0 4%;
+  }
+}
+.container-home .content .team {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 4%;
+  width: 228%;
+}
+@media only screen and (max-width: 500px) {
+  .container-home .content .team {
+    justify-content: center;
+    width: 100%;
+  }
+}
+.container-home .content .team img {
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: auto;
+  border-radius: 10px;
+}
+@media only screen and (max-width: 500px) {
+  .container-home .content .team img {
+    width: 90%;
+    height: auto;
+  }
+}
+.container-home .content .team h3 {
+  justify-content: center;
+  margin: 0 4% 4% 4%;
+  font-size: 1.5rem;
+}
+.top-nav {
+  display: flex;
+  justify-content: flex-end;
+  margin: 2%;
+  padding-bottom: 5%;
+}
+@media only screen and (max-width: 500px) {
+  .top-nav {
+    display: none;
+  }
+}
+.top-nav .sign-up {
+  width: 13%;
+  height: 50px;
+  font-size: 1.2rem;
+  color: white;
+  background: rgba(4, 58, 103, 0.8);
+  border-radius: 6px;
+  margin-right: 1.5%;
+}
+.top-nav .sign-in {
+  width: 13%;
+  height: 50px;
+  font-size: 1.2rem;
+  background: #FFFFFF;
+  border: 3px solid #315C81;
+  box-sizing: border-box;
+  border-radius: 6px;
+}
+footer .foot {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 95%;
+  margin: 0 2%;
+  padding-top: 5%;
+  padding-bottom: 4%;
+}
+@media only screen and (max-width: 500px) {
+  footer .foot {
+    display: none;
+  }
+}
+footer .foot a {
+  justify-content: flex-start;
+  color: black;
+  text-decoration: none;
+}
