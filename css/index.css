@@ -300,7 +300,7 @@ table {
   display: flex;
   justify-content: center;
   flex-flow: row nowrap;
-  width: 100%;
+  width: 95%;
 }
 @media only screen and (max-width: 1200px) {
   .container-home {
@@ -361,8 +361,10 @@ table {
 .container-home .content .team {
   display: flex;
   flex-flow: column nowrap;
+  justify-content: center;
+  align-content: center;
   margin: 4%;
-  width: 228%;
+  width: 100%;
 }
 @media only screen and (max-width: 500px) {
   .container-home .content .team {
@@ -371,8 +373,9 @@ table {
   }
 }
 .container-home .content .team img {
-  justify-content: center;
-  align-items: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   width: 50%;
   height: auto;
   border-radius: 10px;
@@ -385,8 +388,10 @@ table {
 }
 .container-home .content .team h3 {
   justify-content: center;
+  text-align: center;
   margin: 0 4% 4% 4%;
   font-size: 1.5rem;
+  padding-top: 2%;
 }
 .top-nav {
   display: flex;
@@ -425,7 +430,7 @@ footer .foot {
   width: 95%;
   margin: 0 2%;
   padding-top: 5%;
-  padding-bottom: 4%;
+  padding-bottom: 2%;
 }
 @media only screen and (max-width: 500px) {
   footer .foot {
